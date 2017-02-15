@@ -1,0 +1,17 @@
+Images are functions of their position. I(x,y) =Z, where z is the pixel value.
+
+
+Image processing just does things to the function.
+
+If you were to graph that xy position of the image, you can for example smooth it and the image output is more blurry
+
+
+function from R2 (x and y values) to R(an intensity value).
+
+values of intensity for black and white images is 8 bits (0-255 value)
+
+for color images, it is a combo of 3 functions(channels): [r(x,y), g(x,y), b(x,y)} red, green, blue
+It is a vector value function, so each pixel has 3 values
+
+X i horizontal, and Y is vertical
+
