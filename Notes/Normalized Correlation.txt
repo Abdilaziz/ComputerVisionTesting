@@ -1,0 +1,16 @@
+Normalized Correlation
+
+If we correlated an image with a filter where we want the standard deviation of the filter to be 1.
+
+When comparing 2 filters output when correlated to an image, the scales of those filters should be the same
+
+Therefore make the standard deviation of the filter needs to be 1. That is a way of normalizing the filter.
+
+When the window is over the image and filtering, we should also normalize that patch of the image so that its standard deviation is also 1. Then compute the correlation.
+
+
+When correlating an image with a chunk of that same image (Normalized correlation), the maximum values of the result is when that filtering window was correlating over the same chunk in the full image.
+
+
+
+Therefore you can use normal correlation to find where a part of an image occurs in a larger image. (The brightest part of the output (Max value))

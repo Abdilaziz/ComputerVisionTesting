@@ -1,0 +1,35 @@
+Filters are linear when the H function if H(F1 +F2) = H(F1) + H(F2) and H(aF)= aH(f)
+
+Convolution is a linear property when both functions are linear.
+
+Correlation applies the filter normally, while convolution filps it both on the x and y axis.
+For a linear filter, that filp (correlation) will result in the same kernal (window) and thus the same output as correlation
+
+
+
+For your H(u,v) filter matrix (W x W), if it is used (convolved) with an Image (N x N), the total number of operations is N x N x W x W.
+
+The H matix should be odd length so that the new value is centered.
+
+To make it have less operations, you can linearly separte the W x W matrix. The first row (1 x W) and the first column ( W x 1), if convolved together, make the matrix W x W if it is linearly seperateable. Convolving the two seperate rows with the image (N x N), it will me 2W x N x N (less operations)
+
+Convolving an image with an impulse (Matrix with center value of 1) you get the original image.
+
+When filtering there are three ways to handle boundary issues. 
+1. Assume all missing edges are black: Clip Filter 
+2. Assume the image wraps around (Left side is filled with right side values): Wrap Around
+3. Assume the edge is the same as the corner values: Copy edge
+4. Assume the values at the edge is refelected to fill in the missing edges: Reflect Across Edge.
+
+Best are Copy Edge, and Reflect Accross Edge (No obvious edge, and offers best statitistical estimate).
+
+If matrix has only a 1 on the right side, the image is shifted left one pixel (correlation)
+
+You can also sharpen an image by combining 2 filtering windows (Kernals)
+
+You can use a Median filter if the noise looks like it is more random than Gausian noise. Gausians noise total average accross a whole image is said to be 0, which is why averaging Filters are used, But a different method should be used for Salt and Pepper noise. (A median Filter)
+
+A median is not a linear opperation. Therefore it is not a linear filter.
+Median Filter is also called Edge Perserving
+
+
