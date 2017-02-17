@@ -24,6 +24,11 @@ int main(int argc, char** argv)
 		std::cout << "Could not open or find the image" << std::endl;
 		return -1;
 	}
+<<<<<<< HEAD
+	
+	Mat A = image(Range(250,300),Range(250,300));
+	
+=======
 	//Point i = Point(0, 400);
 	//Point y = Point(400, 400);
 
@@ -35,10 +40,15 @@ int main(int argc, char** argv)
 		}
 	}
 
+>>>>>>> f598f59beecc85b2d688645cbf3b7db99c1d1c8f
 
 	printf("%d",image.rows);
 	namedWindow("Display window", WINDOW_AUTOSIZE); // Create a window for display.
 	imshow("Display window", image); // Show our image inside it.
+
+	namedWindow("Hello window", WINDOW_AUTOSIZE);
+	imshow("Hello window", A);
+
 
 	waitKey(0); // Wait for a keystroke in the window
 	return 0;
