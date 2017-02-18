@@ -1,6 +1,2 @@
 #TargetFrameworkVersion=v4.0:PlatformToolSet=v140:EnableManagedIncrementalBuild=false:VCToolArchitecture=Native32Bit:WindowsTargetPlatformVersion=8.1
-<<<<<<< HEAD
 Debug|x64|C:\Users\Abdi\Desktop\Projects\Project Collections\Projects\Computer Vision Udacity\ComputerVisionTesting\OpenCVTest\|
-=======
-Debug|x64|C:\Users\Abdilaziz\Desktop\Test Projects\Projects\ComputerVisionTesting\OpenCVTest\|
->>>>>>> f598f59beecc85b2d688645cbf3b7db99c1d1c8f
