@@ -1,0 +1,32 @@
+Canny is used to detect edges.
+
+Edges in images are detected through the use of the gradient to calculate the changes from one pixel to the next.
+Gradient gives rate of change in x and y direction.
+
+The gradient of an image can be taken through the use of convolution/correlation with a special matrix (operator).
+The most common one is the sobel operator. Taking the deriviative of a function is an operation that is sensitive to noise, so differentiate
+your image only after you filter out noise (blur your image). 
+
+Due to the linearity of convultion, you can differentiate the filter matrix to get a single matrix to multply your image by.
+
+
+
+Hough Transform.
+
+Hough transform allows you to get information of something that appears in an image.
+It uses the edges (points) produced in by the canny algorithm.
+
+It uses the process of voting, which means that the points obtained for the edge locations are used to determine the models of the objects
+to be found in the image. 
+Ex. If you are looking for a line in the image. y=mx+b. the points (x0,y0) are used to determine m and b (b= -mx+y). Model lines with 
+	speherical coordinates.
+	d = xcos(theta) - ysin(theta). where theta is 0-180 and d can be a negative value.
+	Each point corresponds to a line in the hough space.
+
+Voting: each point corresponds to a sine wave in the hough space, with the point with the most intersections is the correct value for d and theta
+
+The hough transform algorithm is cubic with the number of parameters required for the model
+Ex. for a circle, (x-a)^2 + (y-b)^2 = r^2
+	center of the circle (a,b) and the radius r are unkown.
+	(x,y points are edge points on a circle)
+	
