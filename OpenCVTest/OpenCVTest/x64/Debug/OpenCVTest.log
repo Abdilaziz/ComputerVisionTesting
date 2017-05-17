@@ -1,4 +1,0 @@
-﻿  Source.cpp
-c:\users\abdi\desktop\projects\project collections\projects\computer vision udacity\computervisiontesting\opencvtest\opencvtest\source.cpp(100): warning C4715: 'startVideo': not all control paths return a value
-  OpenCVTest.vcxproj -> C:\Users\Abdi\Desktop\Projects\Project Collections\Projects\Computer Vision Udacity\ComputerVisionTesting\OpenCVTest\x64\Debug\OpenCVTest.exe
-  OpenCVTest.vcxproj -> C:\Users\Abdi\Desktop\Projects\Project Collections\Projects\Computer Vision Udacity\ComputerVisionTesting\OpenCVTest\x64\Debug\OpenCVTest.pdb (Full PDB)
